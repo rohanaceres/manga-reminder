@@ -7,12 +7,12 @@ using System.Globalization;
 
 namespace MangaReminder.Crawler
 {
-    public class Crawler
+    public sealed class MangaCrawler
     {
         internal const int HttpTimeOut = 30000;
         Uri Uri { get; set; }
 
-        public Crawler(string uri)
+        public MangaCrawler(string uri)
         {
             this.Uri = new Uri(uri);
         }
@@ -22,7 +22,7 @@ namespace MangaReminder.Crawler
             Uri newUri = GetMangaDetailsUri();
 
             IConnection connection = NSoupClient.Connect(newUri.AbsoluteUri);
-            connection.Timeout(Crawler.HttpTimeOut);
+            connection.Timeout(MangaCrawler.HttpTimeOut);
             Document document = connection.Get();
 
             Manga self = new Manga();
@@ -36,7 +36,7 @@ namespace MangaReminder.Crawler
         private Uri GetMangaDetailsUri()
         {
             IConnection connection = NSoupClient.Connect(this.Uri.AbsoluteUri);
-            connection.Timeout(Crawler.HttpTimeOut);
+            connection.Timeout(MangaCrawler.HttpTimeOut);
             Document document = connection.Get();
 
             string redirect = document.GetElementsByClass("item").First

@@ -7,8 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <StackPanel>
-            
+        <StackPanel Orientation="Vertical">
+            <TextBox Name="uxTbxEmail" />
+            <TextBox Name="uxTbxLink" />
+            <Button Name="uxBtnAddEntry" Content="Adicionar" Click="OnAddEntry"/>
+
+            <Grid>
+                <ListView x:Name="listView">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+
+            <Button Name="uxBtnStart" Content="Iniciar" Click="OnStart" />
         </StackPanel>
     </Grid>
 </Window>

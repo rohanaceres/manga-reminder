@@ -11,7 +11,6 @@ namespace RedBeard.App
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            PaniniCrawlerJob.Run(10);
         }
     }
 }

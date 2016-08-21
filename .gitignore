@@ -255,5 +255,5 @@ paket-files/
 *.sln.iml
 
 #ignore login stuff
-MangaReminder/MangaReminder.Crawler/LoginConfigs.Designer.cs
-MangaReminder/MangaReminder.Crawler/LoginConfigs.resx
+RedBeard/RedBeard.Crawler/LoginConfig.Designer.cs
+RedBeard/RedBeard.Crawler/LoginConfig.resx

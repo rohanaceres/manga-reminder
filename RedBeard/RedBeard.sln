@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBeard.Crawler", "MangaReminder.Crawler\RedBeard.Crawler.csproj", "{53994500-47A4-4968-97FE-5C48DA1EDBEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBeard.Crawler", "RedBeard.Crawler\RedBeard.Crawler.csproj", "{53994500-47A4-4968-97FE-5C48DA1EDBEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaCrawler.Test", "MangaCrawler.Test\MangaCrawler.Test.csproj", "{87E67BED-5EFD-4553-AEA8-017D333318B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedBeard.Crawler.Test", "RedBeard.Crawler.Test\RedBeard.Crawler.Test.csproj", "{87E67BED-5EFD-4553-AEA8-017D333318B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

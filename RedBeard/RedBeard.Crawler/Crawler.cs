@@ -10,7 +10,7 @@ namespace RedBeard.Crawler
     /// <summary>
     /// Crawler para o site http://www.paninicomics.com.br/web/guest/home
     /// </summary>
-    public class MangaCrawler
+    public class PaniniCrawler
     {
         /// <summary>
         /// Especifica o timeout do download da pagina HTML.
@@ -26,7 +26,7 @@ namespace RedBeard.Crawler
         /// string recebida como parâmetro.
         /// </summary>
         /// <param name="url">URL do site.</param>
-        public MangaCrawler(string url)
+        public PaniniCrawler(string url)
         {
             this.Uri = new Uri(url);
         }
@@ -41,7 +41,7 @@ namespace RedBeard.Crawler
             Uri newUri = GetLastMangaDetailsUri();
 
             IConnection connection = NSoupClient.Connect(newUri.AbsoluteUri);
-            connection.Timeout(MangaCrawler.HttpTimeOut);
+            connection.Timeout(PaniniCrawler.HttpTimeOut);
             Document document = connection.Get();
 
             Manga self = new Manga();
@@ -60,7 +60,7 @@ namespace RedBeard.Crawler
         private Uri GetLastMangaDetailsUri()
         {
             IConnection connection = NSoupClient.Connect(this.Uri.AbsoluteUri);
-            connection.Timeout(MangaCrawler.HttpTimeOut);
+            connection.Timeout(PaniniCrawler.HttpTimeOut);
             Document document = connection.Get();
 
             string redirect = document.GetElementsByClass("item").First

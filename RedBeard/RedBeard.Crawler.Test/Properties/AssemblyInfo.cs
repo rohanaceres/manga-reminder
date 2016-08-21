@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MangeReminder.Model")]
+[assembly: AssemblyTitle("MangaCrawler.Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MangeReminder.Model")]
+[assembly: AssemblyProduct("MangaCrawler.Test")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a40e89c3-9874-4400-8744-11a08c0e2e88")]
+[assembly: Guid("87e67bed-5efd-4553-aea8-017d333318b7")]
 
 // Version information for an assembly consists of the following four values:
 //

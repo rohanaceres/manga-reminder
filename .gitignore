@@ -254,5 +254,6 @@ paket-files/
 .idea/
 *.sln.iml
 
-#ignore test project
-MangaReminder/MangaCrawler.Test/
+#ignore login stuff
+MangaReminder/MangaReminder.Crawler/LoginConfigs.Designer.cs
+MangaReminder/MangaReminder.Crawler/LoginConfigs.resx

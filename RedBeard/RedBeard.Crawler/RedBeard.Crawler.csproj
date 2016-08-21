@@ -42,12 +42,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crawler.cs" />
+    <Compile Include="Credential\LoginConfig.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginConfig.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MangaAlert.cs" />
     <Compile Include="Exception\CorruptedMangaException.cs" />
     <Compile Include="Model\Manga.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MangeReminder.Model\MangaReminder.Model.csproj">
+      <Project>{a40e89c3-9874-4400-8744-11a08c0e2e88}</Project>
+      <Name>MangaReminder.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Credential\LoginConfig.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginConfig.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

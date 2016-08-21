@@ -7,8 +7,8 @@
     <ProjectGuid>{53994500-47A4-4968-97FE-5C48DA1EDBEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MangaReminder.Crawler</RootNamespace>
-    <AssemblyName>MangaReminder.Crawler</AssemblyName>
+    <RootNamespace>RedBeard.Crawler</RootNamespace>
+    <AssemblyName>RedBeard.Crawler</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,16 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Crawler.cs" />
+    <Compile Include="Exception\CorruptedMangaException.cs" />
+    <Compile Include="Model\Manga.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MangeReminder.Model\MangaReminder.Model.csproj">
-      <Project>{a40e89c3-9874-4400-8744-11a08c0e2e88}</Project>
-      <Name>MangaReminder.Model</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

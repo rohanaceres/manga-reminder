@@ -1,11 +1,11 @@
-﻿using MangaReminder.Model;
-using MangaReminder.Model.Exceptions;
-using NSoup;
+﻿using NSoup;
 using NSoup.Nodes;
+using RedBeard.Crawler.Exception;
+using RedBeard.Crawler.Model;
 using System;
 using System.Globalization;
 
-namespace MangaReminder.Crawler
+namespace RedBeard.Crawler
 {
     /// <summary>
     /// Crawler para o site http://www.paninicomics.com.br/web/guest/home

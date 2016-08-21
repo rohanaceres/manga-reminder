@@ -4,13 +4,13 @@ using System;
 using System.Net.Mail;
 using System.Text;
 
-namespace MangaReminder.Crawler
+namespace RedBeard.Crawler
 {
-    public sealed class MangaAlert
+    public sealed class PaniniAlert
     {
         public string TargetMail { get; set; }
 
-        public MangaAlert(string target)
+        public PaniniAlert(string target)
         {
             this.TargetMail = target;
         }

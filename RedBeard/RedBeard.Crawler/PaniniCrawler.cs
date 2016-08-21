@@ -15,7 +15,7 @@ namespace RedBeard.Crawler
         /// <summary>
         /// Especifica o timeout do download da pagina HTML.
         /// </summary>
-        internal const int HttpTimeOut = 30000;
+        protected const int HttpTimeOut = 30000;
         /// <summary>
         /// URL do mangá a ser crawleado.
         /// </summary>
@@ -57,7 +57,7 @@ namespace RedBeard.Crawler
         /// lançado.
         /// </summary>
         /// <returns>A URI que contem os detalhos do ultimo mangá lançado.</returns>
-        private Uri GetLastMangaDetailsUri()
+        protected Uri GetLastMangaDetailsUri()
         {
             IConnection connection = NSoupClient.Connect(this.Uri.AbsoluteUri);
             connection.Timeout(PaniniCrawler.HttpTimeOut);
@@ -76,7 +76,7 @@ namespace RedBeard.Crawler
         /// </summary>
         /// <param name="details">A página HTML de detalhes do mangá.</param>
         /// <returns>O preço do mangá.</returns>
-        private decimal GetMangaPriceFromDetails(Document details)
+        protected decimal GetMangaPriceFromDetails(Document details)
         {
             string priceStr = details.GetElementsByClass("price").First.Text().Split(' ')[8];
             decimal price;
@@ -96,7 +96,7 @@ namespace RedBeard.Crawler
         /// </summary>
         /// <param name="details">A página HTML de detalhes do mangá.</param>
         /// <returns>A data de lançamento do mangá.</returns>
-        private DateTime GetMangaReleaseDateFromDetails(Document details)
+        protected DateTime GetMangaReleaseDateFromDetails(Document details)
         {
             string dateTimeStr = details.GetElementsByClass("price").First.Text().Split(' ')[5];
             DateTime releaseDate;

@@ -1,5 +1,5 @@
-﻿using RedBeard.App.Job;
-using RedBeard.Crawler.Model;
+﻿using RedBeard.App.Logic.Job;
+using RedBeard.Model;
 using System.Windows;
 
 namespace RedBeard.App

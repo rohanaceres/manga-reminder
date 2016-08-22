@@ -70,7 +70,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Job\PaniniCrawlerJob.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -116,9 +115,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RedBeard.Crawler\RedBeard.Crawler.csproj">
-      <Project>{53994500-47a4-4968-97fe-5c48da1edbeb}</Project>
-      <Name>RedBeard.Crawler</Name>
+    <ProjectReference Include="..\RedBeard.App.Logic\RedBeard.App.Logic.csproj">
+      <Project>{61b49861-d050-46d9-8724-eee80277a1c7}</Project>
+      <Name>RedBeard.App.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RedBeard.Model\RedBeard.Model.csproj">
+      <Project>{8db0f8c0-77cc-4e6e-883e-1decc3e5ca9f}</Project>
+      <Name>RedBeard.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

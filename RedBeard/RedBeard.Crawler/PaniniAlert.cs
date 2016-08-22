@@ -1,5 +1,5 @@
 ﻿using RedBeard.Crawler.Credential;
-using RedBeard.Crawler.Model;
+using RedBeard.Model;
 using System;
 using System.Net.Mail;
 using System.Text;

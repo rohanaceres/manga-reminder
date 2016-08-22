@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RedBeard.Crawler.Model
+namespace RedBeard.Model
 {
     /// <summary>
     /// Representa as informações do site da Panini sobre o mangá.

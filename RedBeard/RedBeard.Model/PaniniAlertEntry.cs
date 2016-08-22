@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RedBeard.Crawler.Model
+namespace RedBeard.Model
 {
     public class PaniniAlertEntry
     {

@@ -1,14 +1,13 @@
 ﻿using Quartz;
-using RedBeard.Crawler.Model;
+using RedBeard.Model;
 using RedBeard.Crawler;
 using Quartz.Impl;
 using System.Linq;
 using System;
-using System.Runtime.Serialization;
 
-namespace RedBeard.App.Job
+namespace RedBeard.App.Logic.Job
 {
-    internal sealed class PaniniCrawlerJob : IJob
+    public sealed class PaniniCrawlerJob : IJob
     {
         public void Execute(IJobExecutionContext context)
         {
@@ -32,7 +31,6 @@ namespace RedBeard.App.Job
                 }
             }
         }
-
         public static void Run(PaniniAlertEntry [] entries, int gapInHours = 24)
         {
             // Construct a scheduler factory

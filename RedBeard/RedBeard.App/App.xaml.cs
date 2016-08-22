@@ -1,5 +1,4 @@
-﻿using RedBeard.App.Job;
-using System.Windows;
+﻿using System.Windows;
 
 namespace RedBeard.App
 {

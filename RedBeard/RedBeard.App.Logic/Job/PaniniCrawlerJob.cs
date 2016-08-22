@@ -1,9 +1,9 @@
 ﻿using Quartz;
-using RedBeard.Model;
 using RedBeard.Crawler;
 using Quartz.Impl;
 using System.Linq;
 using System;
+using RedBeard.Domain;
 
 namespace RedBeard.App.Logic.Job
 {

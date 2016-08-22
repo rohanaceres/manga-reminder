@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RedBeard.Model
+namespace RedBeard.Domain
 {
     public class PaniniAlertEntry
     {

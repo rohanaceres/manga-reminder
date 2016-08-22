@@ -60,9 +60,9 @@
       <Project>{53994500-47a4-4968-97fe-5c48da1edbeb}</Project>
       <Name>RedBeard.Crawler</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RedBeard.Model\RedBeard.Model.csproj">
+    <ProjectReference Include="..\RedBeard.Domain\RedBeard.Domain.csproj">
       <Project>{8db0f8c0-77cc-4e6e-883e-1decc3e5ca9f}</Project>
-      <Name>RedBeard.Model</Name>
+      <Name>RedBeard.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

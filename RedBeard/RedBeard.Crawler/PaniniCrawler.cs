@@ -1,7 +1,7 @@
 ﻿using NSoup;
 using NSoup.Nodes;
 using RedBeard.Crawler.Exception;
-using RedBeard.Model;
+using RedBeard.Domain;
 using System;
 using System.Globalization;
 

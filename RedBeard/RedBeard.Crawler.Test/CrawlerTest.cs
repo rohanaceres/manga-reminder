@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RedBeard.Model;
+using RedBeard.Domain;
 
 namespace RedBeard.Crawler.Test
 {

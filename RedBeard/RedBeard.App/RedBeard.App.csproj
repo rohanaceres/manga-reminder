@@ -119,9 +119,9 @@
       <Project>{61b49861-d050-46d9-8724-eee80277a1c7}</Project>
       <Name>RedBeard.App.Logic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RedBeard.Model\RedBeard.Model.csproj">
+    <ProjectReference Include="..\RedBeard.Domain\RedBeard.Domain.csproj">
       <Project>{8db0f8c0-77cc-4e6e-883e-1decc3e5ca9f}</Project>
-      <Name>RedBeard.Model</Name>
+      <Name>RedBeard.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

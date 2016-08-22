@@ -1,5 +1,5 @@
 ﻿using RedBeard.App.Logic.Job;
-using RedBeard.Model;
+using RedBeard.Domain;
 using System.Windows;
 
 namespace RedBeard.App

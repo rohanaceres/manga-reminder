@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RedBeard.Model
+namespace RedBeard.Domain
 {
     /// <summary>
     /// Representa as informações do site da Panini sobre o mangá.

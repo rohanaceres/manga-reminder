@@ -33,5 +33,10 @@ namespace RedBeard.App
 
             PaniniCrawlerJob.Run(new PaniniAlertEntry[] { entry1, entry2 });
         }
+
+        private void OnContentRendered(object sender, System.EventArgs e)
+        {
+            this.MyFrame.NavigationUIVisibility = System.Windows.Navigation.NavigationUIVisibility.Hidden;
+        }
     }
 }

@@ -8,8 +8,11 @@
       d:DesignHeight="400" d:DesignWidth="450"
       Title="RegisterPage">
     <Grid>
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Label Content="cadastrar novo usuário" Width="Auto" Height="Auto" FontSize="24" FontFamily="Arial Rounded MT Bold" Padding="20, 20, 20, 20"/>
+        <StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Image Source="/Assets/gear-256.png" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10,-10"/>
+                <Label Content="cadastrar novo usuário" FontSize="24" FontFamily="Arial Rounded MT Bold" Padding="20, 0, 20, 20"/>
+            </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 20, 0, 20">
                 <Label Content="E-mail" Padding="0, 0, 10, 0"/>
                 <TextBox x:Name="uxTbxEmail" Width="180"/>

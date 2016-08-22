@@ -2,8 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:RedBeard.App"
-             StartupUri="MainWindow.xaml">
+             x:Name="Application">
     <Application.Resources>
-         
+        <local:PageProvider x:Key="PageProvider"/>
     </Application.Resources>
 </Application>

@@ -10,16 +10,16 @@
     <Grid>
         <StackPanel>
             <StackPanel Orientation="Vertical">
-                <Image Source="/Assets/gear-256.png" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10, 10, 10,-10"/>
-                <Label Content="cadastrar novo usuário" FontSize="24" FontFamily="Arial Rounded MT Bold" Padding="20, 0, 20, 20"/>
+                <Image Source="/Assets/settings-24.png" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="20, 10, 10,-20"/>
+                <Label Content="cadastrar novo usuário" FontSize="20" FontFamily="Arial Rounded MT Bold" Padding="20, 0, 20, 20" Foreground="#FF616161"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 20, 0, 20">
-                <Label Content="E-mail" Padding="0, 0, 10, 0"/>
-                <TextBox x:Name="uxTbxEmail" Width="180"/>
+                <Label Content="E-mail" FontSize="16" Padding="0, 0, 10, 0" FontFamily="Arial Rounded MT Bold" Foreground="#FF616161"/>
+                <TextBox x:Name="uxTbxEmail" FontSize="16" Width="180"/>
             </StackPanel>
             <StackPanel Width="350">
                 <DataGrid x:Name="uxDtgdMangaCollection" HorizontalAlignment="Center" Width="350" Height="200" Margin="0, 10, 0, 15"/>
-                <Button x:Name="uxBtnRegister" Content="Cadastrar" Width="80" Height="25" HorizontalAlignment="Right" Background="#FF6A0000" Foreground="White" BorderThickness="0"/>
+                <Button x:Name="uxBtnRegister" FontSize="16" Content="Cadastrar" Width="90" Height="30" HorizontalAlignment="Right" Background="#FF6A0000" Foreground="GhostWhite" BorderThickness="0"/>
             </StackPanel>
         </StackPanel>
     </Grid>
